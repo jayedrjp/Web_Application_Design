@@ -1,0 +1,346 @@
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            padding: 10px 30px;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        .left-nav, .right-nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-list li {
+            list-style: none;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .center-h1 h1 {
+            font-size: 22px;
+            color: #333;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Workspace Booking Section */
+        .workspace-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+            gap: 58px;
+            background-color: #fff;
+        }
+
+        .left-content {
+            max-width: 40%;
+        }
+
+        .left-content h2 {
+            font-size: 35px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .input {
+            position: absolute;
+            top: 500px; 
+            left: 250px;
+            display: flex;
+            gap: 10px;
+            padding: 15px; 
+            margin-bottom: 20px;
+            background-color: #e9e3e3ee;
+            border-radius: 5px; 
+            z-index: 10; 
+        }
+        
+        .input input {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e9e3e37c;
+        }
+        
+        .schedule-btn {
+            width: 180px;
+            padding: 10px;
+            background-color: #ff6f3c; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+
+        /* Image Section */
+        .right-content {
+            position: relative;
+        }
+
+        .large-image {
+            width: 450px;
+            border-radius: 10px;
+        }
+
+        .small-image-1, .small-image-2, .small-image-3 {
+            position: absolute;
+            border-radius: 50%;
+        }
+        .small-image-4, .small-image-5 {
+            position: absolute;
+        }
+
+        .small-image-1 {
+            top: -50px;
+            right: -130px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .small-image-2 {
+            bottom: 120px;
+            right: -238px;
+            width: 330px;
+            height: 330px;
+        }
+        .small-image-3 {
+            bottom: 280px;
+            right: -270px;
+            width: 290px;
+            height: 290px;
+        }
+        .small-image-4 {
+            bottom: 10px;
+            right: -60px;
+        }
+        .small-image-5 {
+                top: 240px;
+                left: -720px;
+        }
+
+        /* Logos Section */
+        .logos-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+
+        .logos-container img {
+            width: 80px;
+            height: auto;
+        }
+
+        /* Container above logos */
+        .container {
+            display: flex;
+            align-items: center;
+            border-radius: 25px;
+            margin-left: 90px; /* Move container to the left */
+            margin-bottom: 30px; /* Space below the container */
+        }
+
+        .avatars {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+        }
+
+        .avatars img {
+            
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin-right: -10px; /* Overlapping effect */
+        }
+
+        .more {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #00C9A7;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            border: 2px solid #fff;
+            margin-right: 10px; /* Add space after the last avatar */
+        }
+
+        .text {
+            position: absolute;
+            bottom: 28px;
+            left: 320px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Second Page Section */
+        .second-page-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 90px 100px;
+            text-align: left;
+            background-color: #fefefe; /* Light background color */
+            gap: 10px; /* Add gap between text and image */
+        }
+
+        /* Left Image Section */
+        .left-image {
+            position: relative;
+        }
+
+        .workspace-image {
+            width: 450px; /* Larger image width to match the design */
+            border-radius: 20px;
+            /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); Slight shadow for depth */
+        }
+
+        .calendar-overlay {
+            position: absolute;
+            bottom: 20px;
+            right: -110px;
+            display: flex;
+            align-items: center;
+            
+            padding: 10px 15px;
+            border-radius: 10px;
+            
+        }
+
+        .calendar-overlay img {
+            width: 150px;
+            height: 150px;
+            margin-right: 8px;
+        }
+
+        /* Right Text Section */
+        .right-text {
+            max-width: 500px; /* Limit the width of text to balance with the image */
+        }
+
+        .right-text h3 {
+            color: #ff6f3c;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 10px;
+        }
+
+        .right-text h2 {
+            font-size: 42px; /* Larger heading */
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .right-text p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px; /* Reduce gap slightly */
+        }
+
+        /* Button Styles */
+        .availability-btn, .tour-btn {
+            padding: 12px 30px;
+            background-color: #ff6f3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .availability-btn:hover, .tour-btn:hover {
+            background-color: #e65b2c; /* Darker on hover */
+        }
+
+        .tour-btn {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .tour-btn:hover {
+            background-color: #ddd; /* Slightly darker hover */
+        }
+
+        /* Schedule Visit Section */
+        .schedule-container {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(35.52px); /* Background blur effect */
+            margin: 20px 0; /* Space above and below the container */
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            color: #999; /* Gray color for the text */
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+        .city {
+            font-weight: bold;
+            color: #555; /* Darker color for emphasis */
+            margin-right: 5px;
+        }
+
+        .schedule-button {
+            margin-left: auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff5722; /* Orange background */
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .schedule-button:hover {
+            background-color: #e64a19; /* Darker shade on hover */
+        }
